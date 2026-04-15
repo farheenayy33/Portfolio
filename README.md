@@ -1,6 +1,9 @@
 # Portfolio Website
 
 A modern, responsive portfolio website built with React, TypeScript, Tailwind CSS, and Framer Motion. This portfolio showcases projects, skills, education, certifications, and open source contributions with smooth animations and a beautiful UI.
+## 🎬 Demo
+
+![Demo](src/assets/video/Demo.gif)
 
 ## 📸 Screenshots
 
