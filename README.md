@@ -5,17 +5,19 @@ A modern, responsive portfolio website built with React, TypeScript, Tailwind CS
 ## 📸 Screenshots
 
 ### Homepage
-[Hero-section](src/assets/images/ss1.png)
+![Hero-section](src/assets/images/ss1.png)
 
 ### About Section
-[Hero-section](src/assets/images/ss1.png)
-### Skills 
-[Skills](src/assets/images/ss2.png)
-###  Projects
-[Projects](src/assets/images/ss3.png)
+![About-section](src/assets/images/ss2.png)
 
-### Open Source 
-[Open-Source](src/assets/images/ss4.png)
+### Skills
+![Skills](src/assets/images/ss3.png)
+
+### Projects
+![Projects](src/assets/images/ss4.png)
+
+### Open Source
+![Open-Source](src/assets/images/ss5.png)
 ## 🌟 Features
 
 - **Responsive Design** - Works perfectly on desktop, tablet, and mobile devices
