@@ -2,6 +2,20 @@
 
 A modern, responsive portfolio website built with React, TypeScript, Tailwind CSS, and Framer Motion. This portfolio showcases projects, skills, education, certifications, and open source contributions with smooth animations and a beautiful UI.
 
+## 📸 Screenshots
+
+### Homepage
+[Hero-section](src/assets/images/ss1.png)
+
+### About Section
+[Hero-section](src/assets/images/ss1.png)
+### Skills 
+[Skills](src/assets/images/ss2.png)
+###  Projects
+[Projects](src/assets/images/ss3.png)
+
+### Open Source 
+[Open-Source](src/assets/images/ss4.png)
 ## 🌟 Features
 
 - **Responsive Design** - Works perfectly on desktop, tablet, and mobile devices
@@ -96,23 +110,6 @@ The website will be available at `http://localhost:5173`
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## 📸 Screenshots
-
-### Homepage
-[Add screenshot link here]
-
-### About Section
-[Add screenshot link here]
-
-### Skills & Projects
-[Add screenshot link here]
-
-### Education & Certifications
-[Add screenshot link here]
-
-### Open Source & Contact
-[Add screenshot link here]
-
 ## 🎨 Customization
 
 ### Colors & Theme
@@ -122,10 +119,14 @@ Edit the theme colors in `tailwind.config.js` and theme provider to match your b
 ### Content
 
 Update the content in individual component files:
-- **Hero**: `src/assets/images/ss1.png`
-- **Skills**: `src/assets/images/ss2.png`
-- **Projects**: `src/assets/images/ss3.png`
-- **Open Source**: `src/assets/images/ss4.pngx`
+- **Hero**: `src/components/portfolio/Hero.tsx`
+- **About**: `src/components/portfolio/About.tsx`
+- **Skills**: `src/components/portfolio/Skills.tsx`
+- **Projects**: `src/components/portfolio/Projects.tsx`
+- **Education**: `src/components/portfolio/Education.tsx`
+- **Certifications**: `src/components/portfolio/Certifications.tsx`
+- **Open Source**: `src/components/portfolio/OpenSource.tsx`
+- **Contact**: `src/components/portfolio/Contact.tsx`
 
 ## 📱 Responsive Breakpoints
 
