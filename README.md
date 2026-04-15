@@ -122,14 +122,10 @@ Edit the theme colors in `tailwind.config.js` and theme provider to match your b
 ### Content
 
 Update the content in individual component files:
-- **Hero**: `src/components/portfolio/Hero.tsx`
-- **About**: `src/components/portfolio/About.tsx`
-- **Skills**: `src/components/portfolio/Skills.tsx`
-- **Projects**: `src/components/portfolio/Projects.tsx`
-- **Education**: `src/components/portfolio/Education.tsx`
-- **Certifications**: `src/components/portfolio/Certifications.tsx`
-- **Open Source**: `src/components/portfolio/OpenSource.tsx`
-- **Contact**: `src/components/portfolio/Contact.tsx`
+- **Hero**: `src/assets/images/ss1.png`
+- **Skills**: `src/assets/images/ss2.png`
+- **Projects**: `src/assets/images/ss3.png`
+- **Open Source**: `src/assets/images/ss4.pngx`
 
 ## 📱 Responsive Breakpoints
 
