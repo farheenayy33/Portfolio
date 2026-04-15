@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 248 30% 97%;
+    --foreground: 248 25% 12%;
+    --card: 248 25% 99%;
+    --card-foreground: 248 25% 12%;
+    --card-border: 248 20% 90%;
+    --popover: 248 30% 97%;
+    --popover-foreground: 248 25% 12%;
+    --primary: 270 60% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 248 20% 93%;
+    --secondary-foreground: 248 25% 25%;
+    --muted: 248 20% 93%;
+    --muted-foreground: 248 15% 50%;
+    --accent: 330 60% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 248 35% 8%;
+    --foreground: 248 20% 92%;
+    --card: 248 30% 11%;
+    --card-foreground: 248 20% 92%;
+    --card-border: 248 25% 18%;
+    --popover: 248 30% 11%;
+    --popover-foreground: 248 20% 92%;
+    --primary: 270 65% 65%;
+    --primary-foreground: 248 35% 8%;
+    --secondary: 248 25% 16%;
+    --secondary-foreground: 248 20% 80%;
+    --muted: 248 25% 16%;
+    --muted-foreground: 248 15% 55%;
+    --accent: 330 65% 65%;
+    --accent-foreground: 248 35% 8%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+  }
+
+  * {
+    @apply border-slate-200;
+  }
+
+  .dark * {
+    @apply border-slate-800;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
