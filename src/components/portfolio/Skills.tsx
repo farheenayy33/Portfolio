@@ -15,7 +15,7 @@ const skillGroups = [
   {
     label: "Tools",
     color: "primary",
-    skills: ["Git", "GitHub", "Vercel", "VS Code", "npm"],
+    skills: ["Git", "GitHub", "Vercel","Netlify ", "VS Code", "npm"],
   },
   {
     label: "UI & Design",
