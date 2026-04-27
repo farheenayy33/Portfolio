@@ -62,3 +62,5 @@ export function Certifications() {
     </section>
   );
 }
+
+
