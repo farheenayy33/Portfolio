@@ -8,7 +8,7 @@ export function Certifications() {
 
   return (
     <section id="certifications" className="py-24 md:py-32 bg-muted/30">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px,-4 md:px-8">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 40 }}
@@ -62,5 +62,3 @@ export function Certifications() {
     </section>
   );
 }
-
-
