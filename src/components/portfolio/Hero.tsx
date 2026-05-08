@@ -1,10 +1,22 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { motion, useMotionValue, useSpring, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useSpring,
+  AnimatePresence,
+} from "framer-motion";
 import { Github, Mail, ArrowDown, Zap } from "lucide-react";
 
-const ROLES = ["Frontend Developer", "React Engineer", "UI Craftsperson", "TypeScript Dev", "Web Builder"];
+const ROLES = [
+  "Frontend Developer",
+  "React Engineer",
+  "UI Craftsperson",
+  "TypeScript Dev",
+  "Web Builder",
+];
 
-const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*";
+const CHARS =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*";
 
 function useScramble(text: string, trigger: boolean) {
   const [display, setDisplay] = useState(text);
@@ -23,7 +35,7 @@ function useScramble(text: string, trigger: boolean) {
             if (i < iteration) return char;
             return CHARS[Math.floor(Math.random() * CHARS.length)];
           })
-          .join("")
+          .join(""),
       );
       if (iteration < text.length) {
         iteration += 0.4;
@@ -61,7 +73,8 @@ function Particles() {
             top: `${p.y}%`,
             width: p.size,
             height: p.size,
-            background: p.id % 2 === 0 ? "hsl(var(--primary))" : "hsl(var(--accent))",
+            background:
+              p.id % 2 === 0 ? "hsl(var(--primary))" : "hsl(var(--accent))",
             opacity: p.opacity,
           }}
           animate={{
@@ -117,10 +130,22 @@ function CursorGlow() {
 
 function MarqueeTicker() {
   const items = [
-    "React JS", "TypeScript", "Tailwind CSS", "Frontend Dev",
-    "Open to Work", "JavaScript", "Responsive UI", "Clean Code",
-    "React JS", "TypeScript", "Tailwind CSS", "Frontend Dev",
-    "Open to Work", "JavaScript", "Responsive UI", "Clean Code",
+    "React JS",
+    "TypeScript",
+    "Tailwind CSS",
+    "Frontend Dev",
+    "Open to Work",
+    "JavaScript",
+    "Responsive UI",
+    "Clean Code",
+    "React JS",
+    "TypeScript",
+    "Tailwind CSS",
+    "Frontend Dev",
+    "Open to Work",
+    "JavaScript",
+    "Responsive UI",
+    "Clean Code",
   ];
 
   return (
@@ -131,7 +156,10 @@ function MarqueeTicker() {
         transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
       >
         {items.map((item, i) => (
-          <span key={i} className="flex items-center gap-3 text-sm font-bold text-primary/70 uppercase tracking-widest shrink-0">
+          <span
+            key={i}
+            className="flex items-center gap-3 text-sm font-bold text-primary/70 uppercase tracking-widest shrink-0"
+          >
             <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
             {item}
           </span>
@@ -147,7 +175,11 @@ const letterVariants = {
     opacity: 1,
     y: 0,
     rotateX: 0,
-    transition: { duration: 0.6, delay: i * 0.07, ease: [0.215, 0.61, 0.355, 1] },
+    transition: {
+      duration: 0.6,
+      delay: i * 0.07,
+      ease: [0.215, 0.61, 0.355, 1],
+    },
   }),
 };
 
@@ -179,19 +211,33 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <motion.div
           className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full"
-          style={{ background: "radial-gradient(circle, hsl(var(--primary) / 0.18) 0%, transparent 70%)" }}
+          style={{
+            background:
+              "radial-gradient(circle, hsl(var(--primary) / 0.18) 0%, transparent 70%)",
+          }}
           animate={{ scale: [1, 1.15, 1], rotate: [0, 20, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
           className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full"
-          style={{ background: "radial-gradient(circle, hsl(var(--accent) / 0.18) 0%, transparent 70%)" }}
+          style={{
+            background:
+              "radial-gradient(circle, hsl(var(--accent) / 0.18) 0%, transparent 70%)",
+          }}
           animate={{ scale: [1, 1.2, 1], rotate: [0, -15, 0] }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2,
+          }}
         />
         <motion.div
           className="absolute top-1/2 right-1/4 w-64 h-64 rounded-full"
-          style={{ background: "radial-gradient(circle, hsl(var(--primary) / 0.10) 0%, transparent 70%)" }}
+          style={{
+            background:
+              "radial-gradient(circle, hsl(var(--primary) / 0.10) 0%, transparent 70%)",
+          }}
           animate={{ y: [-20, 20, -20] }}
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -210,7 +256,6 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 md:px-8 flex flex-col items-center text-center relative z-10">
-
         {/* Status badge */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8, y: -10 }}
@@ -260,7 +305,10 @@ export function Hero() {
                 initial="hidden"
                 animate="visible"
                 className="inline-block text-[clamp(3.5rem,10vw,8rem)] font-black leading-none bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent bg-[length:300%]"
-                style={{ perspective: "400px", backgroundPosition: `${i * 20}% 50%` }}
+                style={{
+                  perspective: "400px",
+                  backgroundPosition: `${i * 20}% 50%`,
+                }}
               >
                 {char}
               </motion.span>
@@ -304,8 +352,10 @@ export function Hero() {
           className="text-base md:text-lg text-muted-foreground max-w-lg mx-auto leading-relaxed mb-8"
         >
           Turning ideas into{" "}
-          <span className="text-primary font-semibold">beautiful interfaces</span>
-          {" "}— from Vanilla JS games to full-stack React apps.{" "}
+          <span className="text-primary font-semibold">
+            beautiful interfaces
+          </span>{" "}
+          — from Vanilla JS games to full-stack React apps.{" "}
           <span className="text-accent font-semibold">Always building.</span>
         </motion.p>
 
@@ -321,13 +371,19 @@ export function Hero() {
             whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.97 }}
             className="relative group inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-bold text-base text-white overflow-hidden shadow-xl shadow-primary/30"
-            style={{ background: "linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)))" }}
+            style={{
+              background:
+                "linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)))",
+            }}
             data-testid="btn-view-projects"
           >
             <span className="relative z-10">View Projects</span>
             <motion.span
               className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              style={{ background: "linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)))" }}
+              style={{
+                background:
+                  "linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)))",
+              }}
             />
           </motion.a>
 
@@ -381,16 +437,23 @@ export function Hero() {
         className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 8, 0] }}
-        transition={{ delay: 2, duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        transition={{
+          delay: 2,
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
       >
-        <a href="#about" className="flex flex-col items-center gap-1 text-muted-foreground/60 hover:text-primary transition-colors">
-          <span className="text-[10px] font-bold tracking-[0.3em] uppercase">Scroll</span>
+        <a
+          href="#about"
+          className="flex flex-col items-center gap-1 text-muted-foreground/60 hover:text-primary transition-colors"
+        >
+          <span className="text-[10px] font-bold tracking-[0.3em] uppercase">
+            Scroll
+          </span>
           <ArrowDown className="w-3.5 h-3.5" />
         </a>
       </motion.div>
     </section>
   );
 }
-
-
-
