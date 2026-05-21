@@ -8,7 +8,9 @@ export function Footer() {
           <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
             <span>Built with</span>
             <Heart className="w-3.5 h-3.5 text-accent fill-accent" />
-            <span>by Farheen Laraib &mdash; React, TypeScript, Tailwind CSS</span>
+            <span>
+              by Farheen Laraib &mdash; React, TypeScript, Tailwind CSS
+            </span>
           </div>
 
           <div className="flex items-center gap-4">
@@ -31,7 +33,8 @@ export function Footer() {
           </div>
 
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Farheen Laraib. All rights reserved.
+            &copy; {new Date().getFullYear()} Farheen Laraib. All rights
+            reserved.
           </p>
         </div>
       </div>
