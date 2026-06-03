@@ -174,5 +174,3 @@ export function Projects() {
     </section>
   );
 }
-
-
