@@ -88,7 +88,7 @@ export function Certifications() {
                       Generative AI Application Developer
                     </p>
                     <p className="text-muted-foreground leading-relaxed mb-5">
-                      Completed a session/curriculum conducted with the
+                      Completed a session conducted with the
                       collaboration of PAK ANGELS, HEC, NCEAC, ASPIREPAKISTAN,
                       and ICODE GURU, earning the Generative AI Application
                       Developer certificate.
