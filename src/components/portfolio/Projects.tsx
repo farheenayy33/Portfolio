@@ -41,13 +41,13 @@ const projects = [
     featured: false,
   },
   {
-    title: "Notes App",
+    title: "Music Player",
     description:
-      "Notes management app where users can add, edit, delete, and persist notes using localStorage. Built with React functional components and hooks for clean state management.",
-    tags: ["React JS", "LocalStorage", "CSS"],
-    liveUrl: "#",
-    repoUrl: null,
-    featured: false,
+      "Developed a responsive music player with playlist management, playback controls (play, pause, next, previous), progress tracking, volume control, and dynamic state management using Redux Toolkit. Built with React, TypeScript, Tailwind CSS, and Vite, featuring a clean, mobile-friendly interface.",
+    tags: ["React 18", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Vite"],
+    liveUrl: "https://musicplayer2006.netlify.app/",
+    repoUrl: "https://github.com/farheenayy33/CodeA1pha_Music_P1ayer",
+    featured: true,
   },
   {
     title: "Tic Tac Toe Game",
