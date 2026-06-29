@@ -5,6 +5,25 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
+    title: "QuakeRescue AI",
+    description:
+      "Built an AI-powered earthquake rescue simulation featuring a 3D interactive city environment where intelligent pathfinding algorithms locate and rescue trapped survivors. Integrated React Three Fiber for immersive visualization with a Flask backend implementing BFS, Dijkstra, and A* algorithms for optimal rescue route planning.",
+    tags: [
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "Three.js",
+      "React Three Fiber",
+      "Python",
+      "Flask",
+      "BFS",
+      "Dijkstra",
+      "A*",
+    ],
+    repoUrl: "https://github.com/farheenayy33/QuakeRescue-AI",
+    featured: true,
+  },
+  {
     title: "TailAdmin Dashboard",
     description:
       "Cloned and deeply customized TailAdmin with a pink/lavender theme, personal branding, and a Settings page featuring Bond Alerts management (Add/Edit/Delete) persisted in localStorage. Fully responsive admin dashboard with charts, tables, sidebar navigation, and dark/light mode toggle — deployed on Vercel.",
@@ -43,7 +62,7 @@ const projects = [
   {
     title: "Music Player",
     description:
-      "Developed a responsive music player with playlist management, playback controls (play, pause, next, previous), progress tracking, volume control, and dynamic state management using Redux Toolkit. Built with React, TypeScript, Tailwind CSS, and Vite, featuring a clean, mobile-friendly interface.",
+      "Developed a responsive music player with playlist management, playback controls (play, pause, next, previous), progress tracking, volume control, and dynamic state management using Redux Toolkit.",
     tags: ["React 18", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Vite"],
     liveUrl: "https://musicplayer2006.netlify.app/",
     repoUrl: "https://github.com/farheenayy33/CodeA1pha_Music_P1ayer",
