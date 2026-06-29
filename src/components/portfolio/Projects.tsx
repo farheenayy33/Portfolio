@@ -69,15 +69,6 @@ const projects = [
     featured: true,
   },
 
-  {
-    title: "Card Searching App",
-    description:
-      "Search-based card browsing application with real-time filtering and dynamic card rendering from an API. Features debounced search input and a responsive card grid for smooth browsing.",
-    tags: ["JavaScript", "HTML", "CSS", "API"],
-    liveUrl: "#",
-    repoUrl: null,
-    featured: false,
-  },
 ];
 
 export function Projects() {
