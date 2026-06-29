@@ -38,7 +38,7 @@ const projects = [
       "A fully responsive restaurant website with a polished menu showcase, about section, and contact details. Features smooth scroll, hover animations, and a mobile-friendly layout built with CSS Flexbox and Grid. Live and deployed on Vercel.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     liveUrl: "https://savorabistrocom.vercel.app",
-    repoUrl: null,
+    repoUrl: "https://github.com/farheenayy33/Savora-Bistro-Resturant",
     featured: true,
   },
   {
@@ -55,8 +55,8 @@ const projects = [
     description:
       "Data management app integrated with a REST API for full Create, Read, Update, Delete operations. Built with fetch/axios for API calls, real-time state updates, form validation, loading states, and error handling.",
     tags: ["React", "REST API", "JavaScript"],
-    liveUrl: null,
-    repoUrl: null,
+    liveUrl: "https://crud-react-project-ten.vercel.app/",
+    repoUrl: "https://github.com/farheenayy33/CRUD-React-Project",
     featured: false,
   },
   {
@@ -68,15 +68,7 @@ const projects = [
     repoUrl: "https://github.com/farheenayy33/CodeA1pha_Music_P1ayer",
     featured: true,
   },
-  {
-    title: "Tic Tac Toe Game",
-    description:
-      "Two-player Tic Tac Toe built with pure Vanilla JS — win detection logic, turn tracking, and game reset functionality. Pure DOM manipulation with no frameworks.",
-    tags: ["Vanilla JavaScript", "HTML", "CSS"],
-    liveUrl: "#",
-    repoUrl: null,
-    featured: false,
-  },
+
   {
     title: "Card Searching App",
     description:
